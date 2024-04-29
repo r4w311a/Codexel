@@ -12,4 +12,7 @@ Route::view('profile', 'profile')
     ->middleware(['auth'])
     ->name('profile');
 
-require __DIR__.'/auth.php';
+Route::get('/categories', function () {
+    return view('sections.categories');
+})->middleware(['auth'])->name('manage-categories');
+require __DIR__ . '/auth.php';
