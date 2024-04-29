@@ -15,4 +15,7 @@ Route::view('profile', 'profile')
 Route::get('/categories', function () {
     return view('sections.categories');
 })->middleware(['auth'])->name('manage-categories');
+Route::get('/products', function () {
+    return view('sections.products');
+})->middleware(['auth'])->name('manage-products');
 require __DIR__ . '/auth.php';

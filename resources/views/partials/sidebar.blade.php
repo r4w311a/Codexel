@@ -9,7 +9,7 @@
             <a class="nav-link {{ Request::is('categories') ? 'active' : '' }} text-white" href="{{route('manage-categories')}}">Categories</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link {{ Request::is('products') ? 'active' : '' }} text-white" href="#">Products</a>
+            <a class="nav-link {{ Request::is('products') ? 'active' : '' }} text-white" href="{{route('manage-products')}}">Products</a>
         </li>
     </ul>
 </div>
